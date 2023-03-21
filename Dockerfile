@@ -20,6 +20,7 @@ RUN apt-get update && apt upgrade -y \
 	&& apt-get install postgrespro-std-15 -y \
 	&& ln -sf /usr/share/zoneinfo/${TZ} /etc/localtime \
 	&& echo ${TZ} > /etc/timezone \
+	&& dpkg-reconfigure -f noninteractive tzdata \
 	&& rm -rf /var/lib/apt/lists/* /var/cache/apt/* \
 	&& apt clean
    
