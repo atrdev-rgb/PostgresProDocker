@@ -2,9 +2,12 @@
 FROM ubuntu:22.10
 
 # LABEL about the custom image
-LABEL maintainer="admin@admin.com"
-LABEL version="0.1"
-LABEL description="This is a custom Docker Image for shops."
+LABEL AUTHOR="atrdev-rgb"\
+      COURSE="DEVOPS"\
+      DURATION="25HRS"\
+      maintainer="atrdev-rgb@atrdev-rgb.com"\
+      version="0.1"\
+      description="This is a custom Docker Image Postgres Pro for shops."\
 
 # Disable Prompt During Packages Installation
 ENV TZ=Europe/London
